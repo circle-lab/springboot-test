@@ -9,7 +9,10 @@ public class testController {
 
 	@RequestMapping("/test")
 	public String index(Model model) {
+
+		// modelにmessageを設定
 		model.addAttribute("message", "hello IndexController");
 		return "index";
+
 	}
 }
